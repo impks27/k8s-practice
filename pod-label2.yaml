@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    env: production
+    owner: impks
+  name: labelex2
+spec:
+  containers:
+  - image: nginx
+    name: pod-label2
+    ports:
+    - containerPort: 88
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
